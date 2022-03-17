@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 class Node{
@@ -17,17 +17,19 @@ public:
 };
 
 class List{
-private:
+public:
     Node* head;
     int length;
 
 public:
     List() {
-      head = NULL;
+      head = new Node();
       length = 0;
+      cout<<"list constructed";
     }
     ~List() {
-        cout<<"Destructed"<<endl;
+      delete head;
+      cout<<"Destructed"<<endl;
     }
     void insert(int pos, int val);
     void insertEnd(int val);
@@ -56,14 +58,14 @@ void List::insert(int pos, int val) {
 }
 
 void List::insertEnd(int val) {
-  Node *temp = head;
-  Node *newNode = new Node(val);
+  Node *t = head;
+  Node* newNode = new Node(val);
 
-  while (temp->next != NULL) {
-    temp = temp->next;
+  while (t->next != NULL) {
+    t = t->next;
   }
   newNode->next = NULL;
-  temp->next = newNode;
+  t->next = newNode;
   length++;
 }
 
@@ -99,6 +101,7 @@ void List::display() {
     temp = temp->next;
     cout<<temp->data<<"->";
   }
+  cout<<"NULL"<<endl;
 }
 
 int List::search(int val) {
@@ -121,6 +124,7 @@ int List::search(int val) {
 
 int main() {
   List l;
+  cout<<endl<<l.head<<endl;
   int c, num, temp;
   bool b = true;
   while (b) {
