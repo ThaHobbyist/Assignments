@@ -11,8 +11,8 @@ public:
     }
 
     Node(int x) {
-        this->data = x;
-        this->next = NULL;
+        data = x;
+        next = NULL;
     }
 };
 
