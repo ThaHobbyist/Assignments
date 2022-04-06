@@ -1,0 +1,5 @@
+{
+    "markdown-pdf.outputDirectoryRelativePathFile": true,
+    "markdown-pdf.pageRanges": "",
+    "markdown-pdf.outputDirectory": "~/output"
+}
