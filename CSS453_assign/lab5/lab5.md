@@ -1,17 +1,17 @@
-### Name: DIPTANGSHU DEY
+## Name: DIPTANGSHU DEY
 
-### Roll no: 20CS8018
+## Roll no: 20CS8018
 
-### Reg no: 20U10043
+## Reg no: 20U10043
 
 <hr>
 
-### Subject: Signal and Systems Laboratory
+## Subject: Signal and Systems Laboratory
 
 
-### Subject Code: CSS453 
+## Subject Code: CSS453 
 
-### Lab 5: Laplace Transforms
+## Lab 5: Laplace Transforms
 
 <hr>
 
@@ -45,7 +45,7 @@ display(sympy.laplace_transform(f, t, s)[0])
 ###### Output:
 >ans=
 >
-> $ \frac{2}{s^3) $
+> $ \frac{2}{s^3} $
 
 **(b)** $ y = e^{-at} + e^{-3at} $
 
@@ -177,7 +177,7 @@ display(sympy.inverse_laplace_transform(F, s, t))
 >
 > $ 4e^{3t} + 2sin(5t) $
 
-**(c)** $ F = \frac{e^{-3s}(2s+7)}{s^2+16}$
+**(c)** $ F = \frac{e^{-3s}(2s+7)}{s^2+16} $
 
 ```python
 F = sympy.exp(-3*s)*(2*s + 7)/(s**2 + 16)
