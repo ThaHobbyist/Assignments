@@ -30,5 +30,3 @@ main:
 	syscall
 	move $t3,$v0
 	
-	#Switch
-	beg $t0,1,case 1
