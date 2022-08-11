@@ -1,0 +1,15 @@
+; Max() of two nos
+LXI H, 2501H
+MOV A, M
+
+INX H
+
+CMP M
+
+JNC AHEAD
+
+MOV A, M
+
+AHEAD: STA 2503H
+
+HLT

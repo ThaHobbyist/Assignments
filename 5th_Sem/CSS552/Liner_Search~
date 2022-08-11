@@ -1,0 +1,4 @@
+; no. is even or odd
+LXI H, 2050H
+MOV A, M
+

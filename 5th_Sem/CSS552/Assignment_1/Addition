@@ -1,0 +1,9 @@
+; addition of 8-bit nos
+LXI H, 2501H
+MOV A, M
+INX H
+
+ADD M
+INX H
+MOV M, A
+HLT
