@@ -1,0 +1,64 @@
+C51 COMPILER V9.60.0.0   TRAFFIC_CODE                                                      08/17/2022 18:23:03 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE TRAFFIC_CODE
+OBJECT MODULE PLACED IN .\Objects\traffic_code.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE traffic_code.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listi
+                    -ngs\traffic_code.lst) TABS(2) OBJECT(.\Objects\traffic_code.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          void delay() {
+   4   1          int i, j;
+   5   1          for(i = 0; i< 1275; i++){
+   6   2              for(j = 0; j < 100; j++);
+   7   2          }
+   8   1      }
+   9          
+  10          void main(void) {
+  11   1          int i;
+  12   1          P1 = 9;
+  13   1          P2 = 9;
+  14   1          delay();
+  15   1          for(i = 0; i < 3; i++){
+  16   2              P1 = (1<<i)+8;
+  17   2              delay();
+  18   2          }
+  19   1      
+  20   1          while(1) {
+  21   2              for(i = 1; i < 3; i++){
+  22   3                  P1 = (4>>i)+8;
+  23   3                  P2 = (1<<i)+8;
+  24   3                  delay();
+  25   3              }
+  26   2              for(i = 1; i < 3; i++){
+  27   3                  P2 = (4>>i)+(8<<i);
+  28   3                  delay();
+  29   3              }
+  30   2              for(i = 1; i < 3; i++){
+  31   3                  P1 = (8<<i)+1;
+  32   3                  P2 = (32>>i)+1;
+  33   3                  delay();
+  34   3              }
+  35   2              for(i = 1; i < 3; i++){
+  36   3                  P1 = (1<<i)+(32>>i);
+  37   3                  delay();
+  38   3              }
+  39   2          }
+  40   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    280    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

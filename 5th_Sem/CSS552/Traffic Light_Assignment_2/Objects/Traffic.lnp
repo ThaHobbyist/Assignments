@@ -1,0 +1,5 @@
+".\Objects\STARTUP.obj",
+".\Objects\traffic_code.obj" 
+TO ".\Objects\Traffic" 
+PRINT(".\Listings\Traffic.m51") RAMSIZE(256) 
+CODE( 0X0000-0XFFFF )

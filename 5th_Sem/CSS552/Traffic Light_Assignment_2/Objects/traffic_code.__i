@@ -1,0 +1,1 @@
+"traffic_code.c" OPTIMIZE (8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\traffic_code.lst) TABS (2) OBJECT(.\Objects\traffic_code.obj)
