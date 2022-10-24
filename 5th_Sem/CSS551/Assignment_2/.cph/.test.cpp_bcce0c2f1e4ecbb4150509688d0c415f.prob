@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/home/diptangshudey/MyFiles/Assignments/5th_Sem/CSS551/Assignment_2/test.cpp","tests":[{"id":1661794002369,"input":"1\n6\n2 5 1 7 2 3\n7","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/diptangshudey/MyFiles/Assignments/5th_Sem/CSS551/Assignment_2/test.cpp","group":"local","local":true}
