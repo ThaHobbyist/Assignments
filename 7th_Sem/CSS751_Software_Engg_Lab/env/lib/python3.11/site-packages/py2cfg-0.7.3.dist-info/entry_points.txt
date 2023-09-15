@@ -1,0 +1,3 @@
+[console_scripts]
+py2cfg=py2cfg._runner:main
+

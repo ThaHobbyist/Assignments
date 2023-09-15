@@ -1,0 +1,28 @@
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `Customer`;
+DROP TABLE IF EXISTS `Menu`;
+DROP TABLE IF EXISTS `Orders`;
+SET FOREIGN_KEY_CHECKS = 1;
+
+CREATE TABLE `Customer` (
+    `Phone Number` VARCHAR NOT NULL,
+    `Name` TEXT NOT NULL,
+    `Address` TEXT NOT NULL,
+    PRIMARY KEY (`Phone Number`)
+);
+
+CREATE TABLE `Menu` (
+    `Item Id` VARCHAR NOT NULL,
+    `Item Name` TEXT NOT NULL,
+    `Cost` FLOAT NOT NULL,
+    PRIMARY KEY (`Item Id`)
+);
+
+CREATE TABLE `Orders` (
+    `Order Id` VARCHAR NOT NULL,
+    `Item Id` VARCHAR NOT NULL,
+    `Customer Phone Number` VARCHAR NOT NULL,
+    `Customer Name` TEXT NOT NULL,
+    `Address` TEXT NOT NULL,
+    PRIMARY KEY (`Order Id`)
+);

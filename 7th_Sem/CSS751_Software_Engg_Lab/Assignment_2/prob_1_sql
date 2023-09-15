@@ -1,0 +1,28 @@
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `Student`;
+DROP TABLE IF EXISTS `Registrations`;
+DROP TABLE IF EXISTS `Log`;
+SET FOREIGN_KEY_CHECKS = 1;
+
+CREATE TABLE `Student` (
+    `Roll No.` VARCHAR NOT NULL,
+    `Name` TEXT NOT NULL,
+    `Department` TEXT NOT NULL,
+    `Course` VARCHAR NOT NULL,
+    `Semester` INT NOT NULL,
+    `Last Sem. Grade` FLOAT NOT NULL,
+    PRIMARY KEY (`Roll No.`)
+);
+
+CREATE TABLE `Registrations` (
+    `Roll No.` VARCHAR NOT NULL,
+    `Semester` INT NOT NULL,
+    `Registration Number` VARCHAR NOT NULL,
+    PRIMARY KEY (`Roll No.`, `Semester`)
+);
+
+CREATE TABLE `Log` (
+    `Registration Number` VARCHAR NOT NULL,
+    `TimeStamp` DATETIME NOT NULL,
+    PRIMARY KEY (`Registration Number`)
+);

@@ -1,0 +1,25 @@
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `Accounts`;
+DROP TABLE IF EXISTS `Transactions`;
+SET FOREIGN_KEY_CHECKS = 1;
+
+CREATE TABLE `Accounts` (
+    `Account Number` VARCHAR NOT NULL,
+    `Account Holder` TEXT NOT NULL,
+    `Branch` TEXT NOT NULL,
+    `Phone Number` VARCHAR NOT NULL,
+    `Account Type` TEXT NOT NULL,
+    `Balance` INT NOT NULL,
+    `Interest Rate` FLOAT NOT NULL,
+    PRIMARY KEY (`Account Number`)
+);
+
+CREATE TABLE `Transactions` (
+    `Transaction Id` VARCHAR NOT NULL,
+    `Amount` INT NOT NULL,
+    `From Account` VARCHAR NOT NULL,
+    `To Account` VARCHAR NOT NULL,
+    `Debit or Credit` TEXT NOT NULL,
+    `TimeStamp` DATETIME NOT NULL,
+    PRIMARY KEY (`Transaction Id`)
+);

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: staticfg
+Version: 0.9.5
+Summary: Control flow graph generator for Python3 programs
+Home-page: https://github.com/coetaur0/staticfg
+Author: Aurelien Coet
+Author-email: aurelien.coet19@gmail.com
+License: Apache 2
+Platform: UNKNOWN
+Requires-Dist: astor
+Requires-Dist: graphviz
+
+UNKNOWN
+
+

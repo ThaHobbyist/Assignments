@@ -1,0 +1,2 @@
+# prototype directory
+Everything here gets copied to a working directory (default $HOME/.py2cfg) when pudb starts. The directory is then erased when pudb ends. It serves as the root for a trivial web app.
